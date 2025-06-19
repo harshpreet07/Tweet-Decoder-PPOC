@@ -1,4 +1,3 @@
-# Tweet-Decoder-PPOC
 # Tweet Decode — Sentiment Analysis of Political Tweets
 
 **Tweet Decode** is a sentiment analysis project built using Python, focusing on tweets related to the 2019 Indian Lok Sabha elections. The project aims to extract and compare public sentiment toward major political figures using natural language processing (NLP) techniques.
