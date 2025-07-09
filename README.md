@@ -1,4 +1,4 @@
-# ML-NLP Projects: Regression & Tweet Classification with TensorFlow
+# Regression & Tweet Classification with TensorFlow
 
 This repository contains a set of machine learning and natural language processing (NLP) tasks completed as part of a foundational course. The aim was to understand regression from scratch and build NLP-based classifiers using TensorFlow and pretrained models.
 
