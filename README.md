@@ -1,77 +1,45 @@
+# ML-NLP Projects: Regression & Tweet Classification with TensorFlow
 
-## Tweet Classification and Regression using Machine Learning
+This repository contains a set of machine learning and natural language processing (NLP) tasks completed as part of a foundational course. The aim was to understand regression from scratch and build NLP-based classifiers using TensorFlow and pretrained models.
 
-### Project Overview
+##  Project Overview
 
-This project contains a series of machine learning assignments that build progressively from basic regression models to advanced deep learning-based tweet classification. The final objective is to predict political sentiment (pro-government or opposition) from tweets using TensorFlow and pre-trained NLP embeddings.
-<br/>
+###  Assignment 1: Linear Regression from Scratch
+- Built a simple linear regression model using NumPy only.
+- Predicted car prices based on numerical features.
+- Implemented gradient descent, weight updates, and error metrics (MSE, R²) from scratch.
+- Achieved high R² accuracy on a normalized car dataset.
 
-### Assignments Breakdown
+###  Assignment 2: Feedforward Neural Network (TensorFlow)
+- Generated a regression dataset using `sklearn.datasets.make_regression`.
+- Built a fully connected neural network using the TensorFlow Sequential API.
+- Used Mean Squared Error as loss and SGD optimizer with learning rate tuning.
+- Visualized loss curves and evaluated model accuracy using R².
 
-<br/>
+###  Assignment 3: Tweet Sentiment Classification with BERT
+- Built a binary classification model using the Universal Sentence Encoder (USE) from TensorFlow Hub.
+- Classified political tweets from the IMDb/tweet-like dataset as positive or negative.
+- Implemented data preprocessing, embedding, training, and evaluation using a custom neural network.
+- Visualized model loss and accuracy trends across epochs.
 
-#### Assignment 1: Linear Regression from Scratch
+###  Assignment 4: Political Tweet Categorization (Pro-Gov vs Opposition)
+- Processed a dataset of 49,000+ real-world political tweets.
+- Embedded tweets using the Universal Sentence Encoder (512D vector representation).
+- Built and trained a deep neural network with multiple hidden layers using TensorFlow.
+- Achieved **78% accuracy** in classifying tweets into **pro-government** vs **opposition** categories.
+- Evaluated model with precision, recall, and F1-score.
 
-* **Goal:** Predict car prices using a self-implemented linear regression model.
-* **Skills:** Gradient Descent, Cost Function, Manual Weight Updates
-* **Tech:** NumPy, Pandas, Matplotlib
-* **Evaluation:** Mean Squared Error (MSE), R² Score
+##  Technologies Used
+- Python
+- NumPy, pandas, matplotlib
+- Scikit-learn
+- TensorFlow & Keras
+- TensorFlow Hub (BERT)
 
-<br/>
+##  Results
+- Regression model implemented from scratch and evaluated using custom MSE and R² functions.
+- Fully connected neural network trained to fit synthetic data.
+- NLP sentiment classification using pretrained embeddings.
+- Tweet classification model achieved 78% accuracy on unseen data.
 
-#### Assignment 2: Regression using TensorFlow
 
-* **Goal:** Predict a continuous target using a feedforward neural network.
-* **Model:** `Dense(50) → Dense(10) → Dense(5) → Dense(1)`
-* **Embedding/Features:** Synthetic 10-feature dataset using `make_regression`
-* **Tech:** TensorFlow (Sequential API), SGD optimizer, Loss Plotting
-
-<br/>
-
-#### Assignment 3: Sentiment Regression on Tweets
-
-* **Goal:** Predict sentiment polarity score from preprocessed tweets.
-* **Embedding:** Universal Sentence Encoder (USE) from TensorFlow Hub
-* **Model:** Multi-layer DNN using ReLU activations
-* **Evaluation:** MSE and R² Score
-
-<br/>
-
-#### Assignment 4: Tweet Classification (Final Task)
-
-* **Goal:** Classify tweets into `pro-government (1)` or `opposition (0)`
-* **Data:** 49,477 pre-labeled tweets
-* **Embedding:** USE converts each tweet into 512-dimensional semantic vectors
-* **Model:**
-<br/>
-  ```text
-  Normalization → Dense(150) → Dense(50) → Dense(18) → Dense(6) → Dense(2, softmax)
-  ```
-* **Loss Function:** Sparse Categorical Crossentropy
-* **Optimizer:** Adam
-* **Evaluation:** Accuracy, Precision, Recall, F1-score
-
-<br/>
-
-### Results (Final Model)
-
-* **Validation Accuracy:** \~77%
-* **Precision & Recall:** Balanced across both classes
-* **Use-case:** Political sentiment classification from short text (tweets)
-
-<br/>
-
-### Libraries Used
-
-* `NumPy`, `Pandas`, `Matplotlib`
-* `TensorFlow`, `TensorFlow Hub`
-* `Scikit-learn`
-
-<br/>
-###  Project Highlights
-
-* Built linear regression from scratch using only NumPy
-* Embedded natural language using pre-trained Universal Sentence Encoder
-* Designed and evaluated deep learning models for both regression and classification
-* Achieved \~78% accuracy in real-world political tweet classification
-<br/>
