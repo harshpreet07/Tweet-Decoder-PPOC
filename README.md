@@ -19,7 +19,7 @@ This project contains a series of machine learning assignments that build progre
 
 <br/>
 
-#### ** Assignment 2: Regression using TensorFlow**
+#### Assignment 2: Regression using TensorFlow
 
 * **Goal:** Predict a continuous target using a feedforward neural network.
 * **Model:** `Dense(50) → Dense(10) → Dense(5) → Dense(1)`
@@ -28,7 +28,7 @@ This project contains a series of machine learning assignments that build progre
 
 <br/>
 
-#### ** Assignment 3: Sentiment Regression on Tweets**
+#### Assignment 3: Sentiment Regression on Tweets
 
 * **Goal:** Predict sentiment polarity score from preprocessed tweets.
 * **Embedding:** Universal Sentence Encoder (USE) from TensorFlow Hub
@@ -37,7 +37,7 @@ This project contains a series of machine learning assignments that build progre
 
 <br/>
 
-#### ** Assignment 4: Tweet Classification (Final Task)**
+#### Assignment 4: Tweet Classification (Final Task)
 
 * **Goal:** Classify tweets into `pro-government (1)` or `opposition (0)`
 * **Data:** 49,477 pre-labeled tweets
